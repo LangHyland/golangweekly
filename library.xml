@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UMLUseCaseDiagram xmlns="http://www.omg.org/spec/UML/20090901" xmlns:xmi="http://www.omg.org/XMI">
+    <!-- 系统定义 -->
+    <Model name="BookManagementSystem">
+        <Actors>
+            <Actor name="Admin">
+                <UseCases>
+                    <UseCase name="Login" />
+                    <UseCase name="Manage Books" />
+                    <UseCase name="Manage Users" />
+                </UseCases>
+            </Actor>
+            <Actor name="User">
+                <UseCases>
+                    <UseCase name="Login" />
+                    <UseCase name="View Books" />
+                    <UseCase name="Borrow Books" />
+                    <UseCase name="Return Books" />
+                </UseCases>
+            </Actor>
+        </Actors>
+        <UseCases>
+            <UseCase name="Login" />
+            <UseCase name="View Books" />
+            <UseCase name="Borrow Books" />
+            <UseCase name="Return Books" />
+            <UseCase name="Manage Books" />
+            <UseCase name="Manage Users" />
+        </UseCases>
+        <Associations>
+            <Association>
+                <FromActor name="Admin" />
+                <ToUseCase name="Login" />
+            </Association>
+            <Association>
+                <FromActor name="Admin" />
+                <ToUseCase name="Manage Books" />
+            </Association>
+            <Association>
+                <FromActor name="Admin" />
+                <ToUseCase name="Manage Users" />
+            </Association>
+            <Association>
+                <FromActor name="User" />
+                <ToUseCase name="Login" />
+            </Association>
+            <Association>
+                <FromActor name="User" />
+                <ToUseCase name="View Books" />
+            </Association>
+            <Association>
+                <FromActor name="User" />
+                <ToUseCase name="Borrow Books" />
+            </Association>
+            <Association>
+                <FromActor name="User" />
+                <ToUseCase name="Return Books" />
+            </Association>
+        </Associations>
+    </Model>
+</UMLUseCaseDiagram>
